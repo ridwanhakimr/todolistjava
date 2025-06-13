@@ -1,0 +1,982 @@
+!SESSION 2025-05-12 20:24:28.087 -----------------------------------------------
+eclipse.buildId=4.35.0.20250306-0811
+java.version=23.0.2
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_ID
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY ch.qos.logback.classic 1 0 2025-05-12 20:24:29.906
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2025-05-12 20:24:36.620
+!MESSAGE Logback config file: C:\Users\Ridwan HR\Documents\KULIAH\SEMESTER 2\ALGORITMA\Belajar dan Tugas\academytask\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.7.0.20241001-1350.xml
+
+!ENTRY org.eclipse.egit.ui 2 0 2025-05-12 20:24:41.920
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Ridwan HR'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2025-05-16 13:55:04.560 -----------------------------------------------
+eclipse.buildId=4.35.0.20250306-0811
+java.version=23.0.2
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_ID
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY ch.qos.logback.classic 1 0 2025-05-16 13:55:06.437
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2025-05-16 13:55:27.298
+!MESSAGE Logback config file: C:\Users\Ridwan HR\Documents\KULIAH\SEMESTER 2\ALGORITMA\Belajar dan Tugas\academytask\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.7.0.20241001-1350.xml
+
+!ENTRY org.eclipse.egit.ui 2 0 2025-05-16 13:55:32.655
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Ridwan HR'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-05-16 13:55:32.698
+!MESSAGE [Info] Starting language server with binary lsp agent.
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-05-16 13:55:32.722
+!MESSAGE [Info] Lsp agent started successfully.
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-05-16 13:55:34.572
+!MESSAGE [Info]	[lsp] GitHub Copilot Language Server 1.321.0 initialized
+!SESSION 2025-05-17 16:04:39.788 -----------------------------------------------
+eclipse.buildId=4.35.0.20250306-0811
+java.version=23.0.2
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_ID
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY ch.qos.logback.classic 1 0 2025-05-17 16:04:43.675
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2025-05-17 16:04:50.918
+!MESSAGE Logback config file: C:\Users\Ridwan HR\Documents\KULIAH\SEMESTER 2\ALGORITMA\Belajar dan Tugas\academytask\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.7.0.20241001-1350.xml
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-05-17 16:04:56.917
+!MESSAGE [Info] Starting language server with binary lsp agent.
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-05-17 16:04:57.127
+!MESSAGE [Info] Lsp agent started successfully.
+
+!ENTRY org.eclipse.egit.ui 2 0 2025-05-17 16:04:57.300
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Ridwan HR'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-05-17 16:04:59.551
+!MESSAGE [Info]	[lsp] GitHub Copilot Language Server 1.321.0 initialized
+!SESSION 2025-05-17 17:18:38.548 -----------------------------------------------
+eclipse.buildId=4.35.0.20250306-0811
+java.version=23.0.2
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_ID
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY ch.qos.logback.classic 1 0 2025-05-17 17:18:40.586
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2025-05-17 17:18:44.583
+!MESSAGE Logback config file: C:\Users\Ridwan HR\Documents\KULIAH\SEMESTER 2\ALGORITMA\Belajar dan Tugas\academytask\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.7.0.20241001-1350.xml
+
+!ENTRY org.eclipse.egit.ui 2 0 2025-05-17 17:18:50.182
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Ridwan HR'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-05-17 17:18:50.229
+!MESSAGE [Info] Starting language server with binary lsp agent.
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-05-17 17:18:50.259
+!MESSAGE [Info] Lsp agent started successfully.
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-05-17 17:18:52.104
+!MESSAGE [Info]	[lsp] GitHub Copilot Language Server 1.321.0 initialized
+!SESSION 2025-05-31 16:45:12.807 -----------------------------------------------
+eclipse.buildId=4.35.0.20250306-0811
+java.version=23.0.2
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_ID
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY ch.qos.logback.classic 1 0 2025-05-31 16:45:18.186
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2025-05-31 16:45:38.934
+!MESSAGE Logback config file: C:\Users\Ridwan HR\Documents\KULIAH\SEMESTER 2\ALGORITMA\Belajar dan Tugas\academytask\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.7.0.20241001-1350.xml
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-05-31 16:45:49.331
+!MESSAGE [Info] Starting language server with binary lsp agent.
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-05-31 16:45:49.370
+!MESSAGE [Info] Lsp agent started successfully.
+
+!ENTRY org.eclipse.egit.ui 2 0 2025-05-31 16:45:49.611
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Ridwan HR'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-05-31 16:45:52.441
+!MESSAGE [Info]	[lsp] GitHub Copilot Language Server 1.321.0 initialized
+!SESSION 2025-05-31 16:47:44.259 -----------------------------------------------
+eclipse.buildId=4.35.0.20250306-0811
+java.version=23.0.2
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_ID
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY ch.qos.logback.classic 1 0 2025-05-31 16:47:47.885
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2025-05-31 16:47:56.359
+!MESSAGE Logback config file: C:\Users\Ridwan HR\Documents\KULIAH\SEMESTER 2\ALGORITMA\Belajar dan Tugas\academytask\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.7.0.20241001-1350.xml
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-05-31 16:48:06.163
+!MESSAGE [Info] Starting language server with binary lsp agent.
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-05-31 16:48:06.191
+!MESSAGE [Info] Lsp agent started successfully.
+
+!ENTRY org.eclipse.egit.ui 2 0 2025-05-31 16:48:06.414
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Ridwan HR'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-05-31 16:48:08.742
+!MESSAGE [Info]	[lsp] GitHub Copilot Language Server 1.321.0 initialized
+!SESSION 2025-06-04 20:30:28.274 -----------------------------------------------
+eclipse.buildId=4.35.0.20250306-0811
+java.version=23.0.2
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_ID
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY ch.qos.logback.classic 1 0 2025-06-04 20:30:31.589
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2025-06-04 20:30:43.248
+!MESSAGE Logback config file: C:\Users\Ridwan HR\Documents\KULIAH\SEMESTER 2\ALGORITMA\Belajar dan Tugas\academytask\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.7.0.20241001-1350.xml
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-06-04 20:30:49.771
+!MESSAGE [Info] Starting language server with binary lsp agent.
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-06-04 20:30:49.809
+!MESSAGE [Info] Lsp agent started successfully.
+
+!ENTRY org.eclipse.egit.ui 2 0 2025-06-04 20:30:50.273
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Ridwan HR'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-04 20:30:52.729
+!MESSAGE [Info]	[lsp] GitHub Copilot Language Server 1.321.0 initialized
+!SESSION 2025-06-05 08:49:34.050 -----------------------------------------------
+eclipse.buildId=4.35.0.20250306-0811
+java.version=23.0.2
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_ID
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY ch.qos.logback.classic 1 0 2025-06-05 08:49:38.933
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2025-06-05 08:49:59.517
+!MESSAGE Logback config file: C:\Users\Ridwan HR\Documents\KULIAH\SEMESTER 2\ALGORITMA\Belajar dan Tugas\academytask\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.7.0.20241001-1350.xml
+
+!ENTRY org.eclipse.egit.ui 2 0 2025-06-05 08:50:10.330
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Ridwan HR'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-06-05 08:50:10.421
+!MESSAGE [Info] Starting language server with binary lsp agent.
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-06-05 08:50:10.482
+!MESSAGE [Info] Lsp agent started successfully.
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-05 08:50:13.291
+!MESSAGE [Info]	[lsp] GitHub Copilot Language Server 1.321.0 initialized
+!SESSION 2025-06-05 08:57:43.975 -----------------------------------------------
+eclipse.buildId=4.35.0.20250306-0811
+java.version=23.0.2
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_ID
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY ch.qos.logback.classic 1 0 2025-06-05 08:57:47.880
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2025-06-05 08:59:31.916
+!MESSAGE Logback config file: C:\Users\Ridwan HR\Documents\KULIAH\SEMESTER 2\ALGORITMA\Belajar dan Tugas\academytask\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.7.0.20241001-1350.xml
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-06-05 08:59:43.692
+!MESSAGE [Info] Starting language server with binary lsp agent.
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-06-05 08:59:43.733
+!MESSAGE [Info] Lsp agent started successfully.
+
+!ENTRY org.eclipse.egit.ui 2 0 2025-06-05 08:59:43.987
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Ridwan HR'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-05 08:59:46.330
+!MESSAGE [Info]	[lsp] GitHub Copilot Language Server 1.321.0 initialized
+!SESSION 2025-06-05 15:56:52.892 -----------------------------------------------
+eclipse.buildId=4.35.0.20250306-0811
+java.version=23.0.2
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_ID
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY ch.qos.logback.classic 1 0 2025-06-05 15:56:58.081
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2025-06-05 15:57:24.811
+!MESSAGE Logback config file: C:\Users\Ridwan HR\Documents\KULIAH\SEMESTER 2\ALGORITMA\Belajar dan Tugas\academytask\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.7.0.20241001-1350.xml
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-06-05 15:57:35.441
+!MESSAGE [Info] Starting language server with binary lsp agent.
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-06-05 15:57:35.491
+!MESSAGE [Info] Lsp agent started successfully.
+
+!ENTRY org.eclipse.egit.ui 2 0 2025-06-05 15:57:35.678
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Ridwan HR'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-05 15:57:37.994
+!MESSAGE [Info]	[lsp] GitHub Copilot Language Server 1.321.0 initialized
+!SESSION 2025-06-11 19:49:12.211 -----------------------------------------------
+eclipse.buildId=4.35.0.20250306-0811
+java.version=23.0.2
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_ID
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY ch.qos.logback.classic 1 0 2025-06-11 19:49:14.181
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2025-06-11 19:49:23.664
+!MESSAGE Logback config file: C:\Users\Ridwan HR\Documents\KULIAH\SEMESTER 2\ALGORITMA\Belajar dan Tugas\academytask\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.7.0.20241001-1350.xml
+
+!ENTRY org.eclipse.egit.ui 2 0 2025-06-11 19:49:29.047
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Ridwan HR'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-06-11 19:49:29.088
+!MESSAGE [Info] Starting language server with binary lsp agent.
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-06-11 19:49:29.120
+!MESSAGE [Info] Lsp agent started successfully.
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-11 19:49:30.703
+!MESSAGE [Info]	[lsp] GitHub Copilot Language Server 1.321.0 initialized
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-11 19:50:49.222
+!MESSAGE [Info]	[certificates] Removed 91 expired certificates
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-11 19:58:03.245
+!MESSAGE [Info]	[fetchChat] Request c79c4c1e-17ea-4fd0-ac3e-d3e2bbe72bbd at <https://api.individual.githubcopilot.com/chat/completions> finished with 200 status after 720.3756000000285ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-11 19:58:14.338
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-11 19:58:14.825
+!MESSAGE [Info]	[fetchChat] Request db2ee1a3-b1ed-4b9d-9e69-98d9a942e400 at <https://api.individual.githubcopilot.com/chat/completions> finished with 200 status after 481.5030000000261ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-11 19:58:15.122
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-11 19:58:58.560
+!MESSAGE [Info]	[fetchChat] Request eaa1d3f2-d549-4ccd-9297-06f780691515 at <https://api.individual.githubcopilot.com/chat/completions> finished with 200 status after 645.4120000000112ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-11 19:59:05.199
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-11 19:59:05.804
+!MESSAGE [Info]	[fetchChat] Request 1a43be89-96ec-40df-9ea7-8dbc5dfc4839 at <https://api.individual.githubcopilot.com/chat/completions> finished with 200 status after 601.8364999999758ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-11 19:59:05.978
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-11 19:59:53.075
+!MESSAGE [Info]	[fetchCompletions] Request fde4edb2-e1bd-400e-b652-158b7640aa27 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions> finished with 200 status after 548.4999000000535ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-11 19:59:53.075
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-11 19:59:54.953
+!MESSAGE [Info]	[fetchCompletions] Request 582975a1-3cb4-47a1-9b1a-a1813e0dcc7b at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions> finished with 200 status after 240.110100000049ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-11 19:59:54.954
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-11 20:00:49.014
+!MESSAGE [Info]	[fetchCompletions] Request 9439e229-9205-4a13-9abf-995e0bbba32d at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions> finished with 200 status after 236.6642999999458ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-11 20:00:49.014
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-11 20:01:48.490
+!MESSAGE [Info]	[fetchCompletions] Request 45f1b6b7-1b96-4bae-9fd0-1614752a8721 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions> finished with 200 status after 220.43080000008922ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-11 20:01:48.490
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-11 20:01:51.184
+!MESSAGE [Info]	[fetchCompletions] Request efd1d929-cbe0-439f-8b3c-e8a735ef5cb9 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions> finished with 200 status after 211.63420000008773ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-11 20:01:51.185
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-11 20:03:05.273
+!MESSAGE [Info]	[fetchChat] Request d7ded9ef-0255-447f-863e-efb6b777b068 at <https://api.individual.githubcopilot.com/chat/completions> finished with 200 status after 1359.8858999999939ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-11 20:03:16.012
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-11 20:03:16.518
+!MESSAGE [Info]	[fetchChat] Request 3d22a0b0-b2b2-4a76-838f-245806f20591 at <https://api.individual.githubcopilot.com/chat/completions> finished with 200 status after 508.7597000000533ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-11 20:03:16.764
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-11 20:03:44.935
+!MESSAGE [Info]	[fetchCompletions] Request c68d9d7c-229d-4b3d-ab84-ed4833c00e78 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions> finished with 200 status after 269.6095000000205ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-11 20:03:44.936
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-11 20:03:45.673
+!MESSAGE [Info]	[fetchCompletions] Request fd6c01a9-eb4e-4a10-9608-b2e16e35852a at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions> finished with 200 status after 244.56640000001062ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-11 20:03:45.674
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-11 20:04:07.917
+!MESSAGE [Info]	[fetchCompletions] Request 13887327-05f3-4272-a77a-9310d23a7c77 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions> finished with 200 status after 297.8377000000328ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-11 20:04:07.918
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-11 20:04:08.169
+!MESSAGE [Info]	[fetchCompletions] Request 66ed0454-8920-44e1-84f8-8bbeefbbdf6b at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions> finished with 200 status after 236.57720000005793ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-11 20:04:08.170
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-11 20:04:09.282
+!MESSAGE [Info]	[fetchCompletions] Request 6540866b-5f2a-4595-93ab-8586309e231c at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions> finished with 200 status after 214.66110000002664ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-11 20:04:09.283
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-11 20:04:09.825
+!MESSAGE [Info]	[fetchCompletions] Request d72833bd-dcb2-4702-97f0-f6b5ea14552d at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions> finished with 200 status after 226.6081000000704ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-11 20:04:09.825
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-11 20:04:14.888
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-11 20:04:14.889
+!MESSAGE [Info]	[fetchCompletions] Request 4b7dc263-15e7-4d35-bc4d-07c112e7197f at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions> finished with 200 status after 312.01949999993667ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-11 20:04:15.143
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-11 20:04:15.144
+!MESSAGE [Info]	[fetchCompletions] Request 0ea3af89-b151-49ae-b4e5-3ed8675b5e23 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions> finished with 200 status after 238.03350000001956ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-11 20:04:43.122
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-11 20:04:43.122
+!MESSAGE [Info]	[fetchCompletions] Request 597e5c92-4427-4faf-8365-9ef3e37792ba at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions> finished with 200 status after 309.57360000000335ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-11 20:04:47.281
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-11 20:04:47.282
+!MESSAGE [Info]	[fetchCompletions] Request 19b593ca-4ea0-4fe0-bff9-52e5b38067e3 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions> finished with 200 status after 224.0225999999093ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-11 20:05:00.942
+!MESSAGE [Info]	[fetchCompletions] Request 5c52a70b-8d27-4037-8379-0f0923771436 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions> finished with 200 status after 267.387999999919ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-11 20:05:00.943
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-11 20:06:02.341
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-11 20:06:02.341
+!MESSAGE [Info]	[fetchCompletions] Request 7d005e75-3b9b-4408-86f7-065b29d4a753 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions> finished with 200 status after 286.8992999999318ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-11 20:06:10.634
+!MESSAGE [Info]	[fetchCompletions] Request 8e2a1da3-6925-4891-a820-cc0f80ed5f87 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions> finished with 200 status after 356.34920000005513ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-11 20:06:10.635
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-06-11 20:06:40.964
+!MESSAGE [Error]	[default] unhandledRejection: CopilotAuthError: Timed out waiting for login to complete
+    at C:\snapshot\copilot-client\lib\src\auth\deviceFlow.ts:123:19 {
+  [cause]: undefined
+}
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-06-11 20:06:50.961
+!MESSAGE [Error]	[default] unhandledRejection: CopilotAuthError: Timed out waiting for login to complete
+    at C:\snapshot\copilot-client\lib\src\auth\deviceFlow.ts:123:19 {
+  [cause]: undefined
+}
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-11 20:08:20.658
+!MESSAGE [Info]	[fetchChat] Request 538641fc-9ddc-4d92-aae7-05685378c838 at <https://api.individual.githubcopilot.com/chat/completions> finished with 200 status after 1491.193200000096ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-11 20:08:38.407
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-11 20:08:38.969
+!MESSAGE [Info]	[fetchChat] Request 9576ff07-81b1-4ee5-9f91-0f29ffb13b91 at <https://api.individual.githubcopilot.com/chat/completions> finished with 200 status after 560.1524000000209ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-11 20:08:39.152
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-11 20:09:34.576
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-11 20:09:34.576
+!MESSAGE [Info]	[fetchCompletions] Request 3cb7b73b-c424-414c-95ae-c95a1d446ffa at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions> finished with 200 status after 499.6718000001274ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-11 20:09:39.361
+!MESSAGE [Info]	[fetchCompletions] Request f63c4fea-7f47-4d85-95bc-179068dad2da at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions> finished with 200 status after 263.1583999998402ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-11 20:09:39.361
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-11 20:10:50.480
+!MESSAGE [Info]	[fetchChat] Request 0538fc9e-424f-4122-b2af-60e82c2c1cda at <https://api.individual.githubcopilot.com/chat/completions> finished with 200 status after 1525.7113999999128ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-11 20:10:56.151
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-11 20:10:56.702
+!MESSAGE [Info]	[fetchChat] Request 84133fd7-0ef7-4454-9ea2-c7f825f27262 at <https://api.individual.githubcopilot.com/chat/completions> finished with 200 status after 545.1048000000883ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-11 20:10:57.098
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-11 20:11:38.510
+!MESSAGE [Info]	[fetchCompletions] Request 5716b5c8-8e24-492e-ac48-9324c3a66006 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions> finished with 200 status after 266.0370999998413ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-11 20:11:38.511
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-11 20:11:41.183
+!MESSAGE [Info]	[fetchCompletions] Request 9ba0ea85-8836-4e40-a1bd-78c7f21085a8 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions> finished with 200 status after 530.0582000000868ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-11 20:11:41.184
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+!SESSION 2025-06-12 10:11:16.503 -----------------------------------------------
+eclipse.buildId=4.35.0.20250306-0811
+java.version=23.0.2
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_ID
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY ch.qos.logback.classic 1 0 2025-06-12 10:11:19.961
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2025-06-12 10:11:31.836
+!MESSAGE Logback config file: C:\Users\Ridwan HR\Documents\KULIAH\SEMESTER 2\ALGORITMA\Belajar dan Tugas\academytask\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.7.0.20241001-1350.xml
+
+!ENTRY org.eclipse.egit.ui 2 0 2025-06-12 10:11:41.773
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Ridwan HR'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-06-12 10:11:41.860
+!MESSAGE [Info] Starting language server with binary lsp agent.
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-06-12 10:11:41.899
+!MESSAGE [Info] Lsp agent started successfully.
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-12 10:11:44.424
+!MESSAGE [Info]	[lsp] GitHub Copilot Language Server 1.321.0 initialized
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-12 10:11:45.265
+!MESSAGE [Info]	[certificates] Removed 91 expired certificates
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-12 10:15:57.229
+!MESSAGE [Info]	[fetchChat] Request 30b22c5f-b044-4e6e-8041-a1d860f5c65f at <https://api.individual.githubcopilot.com/chat/completions> finished with 200 status after 888.6349000000046ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-12 10:16:05.019
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-12 10:16:05.510
+!MESSAGE [Info]	[fetchChat] Request 915c3243-190c-415e-842e-4f183a1880a1 at <https://api.individual.githubcopilot.com/chat/completions> finished with 200 status after 519.6946999999927ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-12 10:16:06.029
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-12 10:17:35.362
+!MESSAGE [Info]	[fetchCompletions] Request d2e9019d-9714-4e55-9333-2502fe766b08 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions> finished with 200 status after 721.5981000000029ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-12 10:17:35.363
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-12 10:17:46.013
+!MESSAGE [Info]	[fetchCompletions] Request 5a960122-f01f-4e55-a9c3-34853827de1b at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions> finished with 200 status after 239.3531999999541ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-12 10:17:46.014
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-12 10:18:09.706
+!MESSAGE [Info]	[fetchCompletions] Request b3a2876c-4197-46fb-8c75-36863b3f2c0b at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions> finished with 200 status after 410.63389999995707ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-12 10:18:09.714
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-12 10:18:10.071
+!MESSAGE [Info]	[fetchCompletions] Request a3682ce3-bd16-48b2-a5dc-070a2edbc769 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions> finished with 200 status after 325.9180000000051ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-12 10:18:10.072
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-12 10:18:11.285
+!MESSAGE [Info]	[fetchCompletions] Request 73977a4b-76b0-4b89-810f-fca6e000f4f5 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions> finished with 200 status after 457.61490000004414ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-12 10:18:11.285
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-12 10:20:49.206
+!MESSAGE [Info]	[fetchCompletions] Request 9981b4a9-4349-40ef-977f-c7161b531f85 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions> finished with 200 status after 1037.5661000000546ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-12 10:20:49.909
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-12 10:21:30.867
+!MESSAGE [Info]	[fetchCompletions] Request 7c416540-ef63-4381-bbcb-25f941457334 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions> finished with 200 status after 269.96810000005644ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-12 10:21:30.872
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-12 10:23:19.109
+!MESSAGE [Info]	[fetchChat] Request 1e23a487-9616-4bf2-ab58-ce9b56d8682d at <https://api.individual.githubcopilot.com/chat/completions> finished with 200 status after 2304.1154000000097ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-12 10:23:33.200
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-12 10:23:33.632
+!MESSAGE [Info]	[fetchChat] Request 1552a35a-ee9a-471d-81c1-92577d10ce25 at <https://api.individual.githubcopilot.com/chat/completions> finished with 200 status after 481.9122999999672ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-12 10:23:34.051
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-12 10:23:56.664
+!MESSAGE [Info]	[fetchChat] Request e7a075b1-ee2f-4b17-9dc6-1da961a239d8 at <https://api.individual.githubcopilot.com/chat/completions> finished with 200 status after 1661.8617000000086ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-12 10:24:27.573
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-12 10:24:27.573
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-12 10:24:27.574
+!MESSAGE [Info]	[fetchChat] Request af1cc8de-d0ab-4f53-b95b-7d6db3567263 at <https://api.individual.githubcopilot.com/chat/completions> finished with 200 status after 838.6131000000751ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-12 10:28:32.563
+!MESSAGE [Info]	[fetchChat] Request 2989843a-f522-42a0-9059-b0cbc67121da at <https://api.individual.githubcopilot.com/chat/completions> finished with 200 status after 2019.5421000000788ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-12 10:29:06.006
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-12 10:29:06.127
+!MESSAGE [Info]	[fetchChat] Request 627c342e-2fac-423a-aaa8-1ae5f1b44ce7 at <https://api.individual.githubcopilot.com/chat/completions> finished with 200 status after 671.8824000000022ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-12 10:29:06.848
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-12 10:29:32.943
+!MESSAGE [Info]	[fetchCompletions] Request ae286967-41ac-4423-99d6-6efa60b49b8b at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions> finished with 200 status after 1902.033999999985ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-12 10:29:32.950
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-12 10:35:48.410
+!MESSAGE [Info]	[fetchChat] Request 00307bcc-9732-48c6-aafd-fe5a009beb92 at <https://api.individual.githubcopilot.com/chat/completions> finished with 200 status after 2237.2345999998506ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-12 10:36:24.667
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-12 10:36:24.668
+!MESSAGE [Info]	[fetchChat] Request 3f07729f-e56f-473d-a5b5-4efdc1b2acc2 at <https://api.individual.githubcopilot.com/chat/completions> finished with 200 status after 621.6208999999799ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-12 10:36:24.668
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-12 10:36:39.065
+!MESSAGE [Info]	[fetchCompletions] Request e9b66517-c122-4b83-bc59-e55ed1b2f8a4 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions> finished with 200 status after 654.1779000000097ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-12 10:36:39.072
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-12 10:41:38.911
+!MESSAGE [Info]	[fetchChat] Request f77d7672-eb8b-4536-8082-3b0398eb6040 at <https://api.individual.githubcopilot.com/chat/completions> finished with 200 status after 2985.367899999954ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-12 10:42:38.264
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-12 10:42:40.406
+!MESSAGE [Info]	[fetchChat] Request fe90686d-afc6-46b7-87c0-13265a4ef640 at <https://api.individual.githubcopilot.com/chat/completions> finished with 200 status after 2163.783999999985ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-12 10:42:40.921
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-12 10:43:12.654
+!MESSAGE [Info]	[fetchCompletions] Request d21b5b72-4154-4dda-ad1d-df4198e29408 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions> finished with 200 status after 1479.8847000000533ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-12 10:43:12.655
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-12 10:48:51.487
+!MESSAGE [Info]	[fetchChat] Request 19085633-98da-421f-bde1-616277f2a32c at <https://api.individual.githubcopilot.com/chat/completions> finished with 200 status after 4639.057800000068ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-12 10:49:15.959
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-12 10:49:16.750
+!MESSAGE [Info]	[fetchChat] Request 94d603ed-4160-42ef-88be-1139dad89b4a at <https://api.individual.githubcopilot.com/chat/completions> finished with 200 status after 843.6134999999776ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-12 10:49:17.370
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-12 10:51:12.287
+!MESSAGE [Info]	[fetchCompletions] Request ce900b26-ed03-4a92-af05-db6bce3f1a7f at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions> finished with 200 status after 899.8095000004396ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-12 10:51:12.391
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-12 10:54:32.665
+!MESSAGE [Info]	[fetchChat] Request c5951e60-b37f-41c0-b02a-36216daa50c8 at <https://api.individual.githubcopilot.com/chat/completions> finished with 200 status after 2964.3050999999978ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-12 10:54:46.680
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-12 10:54:46.682
+!MESSAGE [Info]	[fetchChat] Request c3a0fae2-879a-4225-86d7-9c87c71e3f55 at <https://api.individual.githubcopilot.com/chat/completions> finished with 200 status after 1373.0156000000425ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-12 10:54:47.210
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-12 10:54:49.446
+!MESSAGE [Info]	[fetchCompletions] Request adb3ea37-606c-4ee5-a990-67d0584e1ef1 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions> finished with 200 status after 1584.348100000061ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-12 10:54:49.545
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-12 10:55:07.974
+!MESSAGE [Info]	[fetchCompletions] Request 4f535b50-3d25-4028-8f53-ff26c9c409c3 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions> finished with 200 status after 594.2006999999285ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-12 10:55:08.091
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-12 10:56:28.506
+!MESSAGE [Info]	[fetchChat] Request 42345407-9420-42d4-9795-9e82f4bf5dd9 at <https://api.individual.githubcopilot.com/chat/completions> finished with 200 status after 2687.715699999593ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-12 10:56:34.990
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-12 10:56:36.081
+!MESSAGE [Info]	[fetchChat] Request 2384abf5-9953-44fc-a3c6-fbf4427e6068 at <https://api.individual.githubcopilot.com/chat/completions> finished with 200 status after 1164.7436000001617ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-12 10:56:36.893
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-12 10:57:24.380
+!MESSAGE [Info]	[fetchCompletions] Request 099d9791-ee68-404d-84de-8d78f4745483 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions> finished with 200 status after 760.9175999998115ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-12 10:57:24.382
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-12 10:58:30.794
+!MESSAGE [Info]	[fetchCompletions] Request bcd432a5-2661-4200-95a1-94db12f25cab at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions> finished with 200 status after 319.24340000003576ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-12 10:58:30.802
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-12 10:58:32.230
+!MESSAGE [Info]	[fetchCompletions] Request 75b4a72c-16d1-4689-9bde-2458f4372c04 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions> finished with 200 status after 330.0814000000246ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-12 10:58:32.231
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-12 11:00:17.430
+!MESSAGE [Info]	[fetchChat] Request 9b306a1f-54a2-48a5-bd6e-9d2a432c8713 at <https://api.individual.githubcopilot.com/chat/completions> finished with 200 status after 2431.8549000001512ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-12 11:00:33.758
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-12 11:00:33.759
+!MESSAGE [Info]	[fetchChat] Request b621c058-df1e-4a05-995a-2d4a4e08541b at <https://api.individual.githubcopilot.com/chat/completions> finished with 200 status after 685.8965000002645ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-12 11:00:34.005
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-12 11:00:59.392
+!MESSAGE [Info]	[fetchCompletions] Request 1ce4ae4b-5bc4-4747-9184-df9092678363 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions> finished with 200 status after 904.7234000000171ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-12 11:00:59.393
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-12 11:01:00.614
+!MESSAGE [Info]	[fetchCompletions] Request e254e85d-c462-4140-a1a6-7e8482020de1 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions> finished with 200 status after 317.5737000000663ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-12 11:01:00.615
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-12 11:01:01.839
+!MESSAGE [Info]	[fetchCompletions] Request 1a3e6a30-b3c1-4e4c-b3bd-c4e0f6d371ba at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions> finished with 200 status after 287.71440000040457ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-12 11:01:01.844
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-12 11:01:45.848
+!MESSAGE [Info]	[fetchChat] Request ae29fe0f-427b-4a31-9b45-adb8454a1a96 at <https://api.individual.githubcopilot.com/chat/completions> finished with 200 status after 931.8114999998361ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-12 11:02:03.990
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-12 11:02:04.536
+!MESSAGE [Info]	[fetchChat] Request 1770a81d-c491-4c61-940c-6009b0d2e942 at <https://api.individual.githubcopilot.com/chat/completions> finished with 200 status after 866.3612999999896ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-12 11:02:05.084
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-12 11:02:34.661
+!MESSAGE [Info]	[fetchCompletions] Request f63f3f3b-b0ca-48b3-8500-cdfa26ac67ea at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions> finished with 200 status after 411.69579999987036ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-12 11:02:34.665
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-12 11:02:38.241
+!MESSAGE [Info]	[fetchCompletions] Request 28d2cc7c-a55a-4b2d-9bbe-04683436fb50 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions> finished with 200 status after 457.8379999999888ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-12 11:02:38.242
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-12 11:03:06.381
+!MESSAGE [Info]	[fetchCompletions] Request 1bdfecb1-ae8d-4701-87a7-0d17b48a8102 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions> finished with 200 status after 701.9767999998294ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-12 11:03:06.487
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-12 11:03:07.303
+!MESSAGE [Info]	[fetchCompletions] Request 9e6b4ce3-c2af-4f8a-85a1-35a7639dddcf at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions> finished with 200 status after 782.3596999999136ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-12 11:03:07.407
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-12 11:03:14.899
+!MESSAGE [Info]	[fetchCompletions] Request 8a173975-2a79-4004-a949-93528522247a at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions> finished with 200 status after 1816.9898000000976ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-12 11:03:14.900
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-12 11:03:15.685
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-12 11:03:15.685
+!MESSAGE [Info]	[fetchCompletions] Request 7d9259c5-6877-4a1f-852d-0702e166d655 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions> finished with 200 status after 746.3260000003502ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-12 11:03:24.408
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-12 11:03:24.409
+!MESSAGE [Info]	[fetchCompletions] Request 823a1c1a-15df-4dc9-8cac-9b2ae712f834 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions> finished with 200 status after 583.1208000001498ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-12 11:03:26.240
+!MESSAGE [Info]	[fetchCompletions] Request eb468ed8-8712-4737-a5fe-6fb328c7ca89 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions> finished with 200 status after 1668.1743000000715ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-12 11:03:26.244
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-06-12 11:31:30.842
+!MESSAGE [Info] Completion request timed out after 5000 milliseconds
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-12 11:31:31.909
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-12 11:31:31.910
+!MESSAGE [Info]	[fetchCompletions] Request 29e552e1-d23a-41fc-b4fb-1b2211802c73 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions> finished with 200 status after 1034.6392000000924ms
+!SESSION 2025-06-12 13:58:07.099 -----------------------------------------------
+eclipse.buildId=4.35.0.20250306-0811
+java.version=23.0.2
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_ID
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY ch.qos.logback.classic 1 0 2025-06-12 13:58:09.131
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2025-06-12 13:58:21.913
+!MESSAGE Logback config file: C:\Users\Ridwan HR\Documents\KULIAH\SEMESTER 2\ALGORITMA\Belajar dan Tugas\academytask\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.7.0.20241001-1350.xml
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-06-12 13:58:27.125
+!MESSAGE [Info] Starting language server with binary lsp agent.
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-06-12 13:58:27.154
+!MESSAGE [Info] Lsp agent started successfully.
+
+!ENTRY org.eclipse.egit.ui 2 0 2025-06-12 13:58:27.295
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Ridwan HR'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-12 13:58:28.978
+!MESSAGE [Info]	[lsp] GitHub Copilot Language Server 1.321.0 initialized
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-12 13:58:29.351
+!MESSAGE [Info]	[certificates] Removed 91 expired certificates
+!SESSION 2025-06-12 13:59:25.103 -----------------------------------------------
+eclipse.buildId=4.35.0.20250306-0811
+java.version=23.0.2
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_ID
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY ch.qos.logback.classic 1 0 2025-06-12 13:59:27.168
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2025-06-12 13:59:30.435
+!MESSAGE Logback config file: C:\Users\Ridwan HR\Documents\KULIAH\SEMESTER 2\ALGORITMA\Belajar dan Tugas\academytask\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.7.0.20241001-1350.xml
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-06-12 13:59:34.797
+!MESSAGE [Info] Starting language server with binary lsp agent.
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-06-12 13:59:34.816
+!MESSAGE [Info] Lsp agent started successfully.
+
+!ENTRY org.eclipse.egit.ui 2 0 2025-06-12 13:59:34.945
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Ridwan HR'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-12 13:59:36.387
+!MESSAGE [Info]	[lsp] GitHub Copilot Language Server 1.321.0 initialized
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-12 13:59:36.709
+!MESSAGE [Info]	[certificates] Removed 91 expired certificates
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-12 14:04:59.586
+!MESSAGE [Info]	[fetchChat] Request eed503ed-0d1b-4a61-8414-de0f5ade8da6 at <https://api.individual.githubcopilot.com/chat/completions> finished with 200 status after 2634.833100000047ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-12 14:05:05.236
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-12 14:05:07.535
+!MESSAGE [Info]	[fetchChat] Request 4540872d-7952-4091-a93a-6f09422ff656 at <https://api.individual.githubcopilot.com/chat/completions> finished with 200 status after 2306.815100000007ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-12 14:05:09.265
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-12 14:05:30.858
+!MESSAGE [Info]	[fetchCompletions] Request 264f7069-b2ec-46aa-829d-ce074a551f07 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions> finished with 200 status after 1702.9820000000182ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-12 14:05:30.858
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-12 14:06:38.050
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-12 14:06:38.051
+!MESSAGE [Info]	[fetchCompletions] Request c9d45243-d053-4d56-ac56-bdb268bc1d32 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions> finished with 200 status after 540.7872000000207ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-12 14:06:38.338
+!MESSAGE [Info]	[fetchCompletions] Request d6731179-8d73-4981-91a3-86d8c6a971ea at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions> finished with 200 status after 242.953600000008ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-12 14:06:38.339
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-12 14:09:42.407
+!MESSAGE [Info]	[fetchChat] Request 0709dc37-7270-4259-a0e2-d4a77e33b4bb at <https://api.individual.githubcopilot.com/chat/completions> finished with 200 status after 3851.589900000021ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-12 14:09:48.371
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-12 14:09:50.156
+!MESSAGE [Info]	[fetchChat] Request bc273e3a-91be-491c-88c9-ac2ceb4ba9ac at <https://api.individual.githubcopilot.com/chat/completions> finished with 200 status after 2566.5840000000317ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-12 14:09:51.171
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-12 14:11:09.039
+!MESSAGE [Info]	[fetchChat] Request 41818ffd-0a7b-4995-bff9-55eed5e82a30 at <https://api.individual.githubcopilot.com/chat/completions> finished with 200 status after 1416.1624000000302ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-12 14:11:14.271
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-12 14:11:14.705
+!MESSAGE [Info]	[fetchChat] Request 1cf19799-3e00-4fe2-891f-fd8d767310b5 at <https://api.individual.githubcopilot.com/chat/completions> finished with 200 status after 489.34359999990556ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-12 14:11:15.222
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-12 14:13:04.249
+!MESSAGE [Info]	[fetchChat] Request 49f5d6de-4866-42e9-92b1-4206ea9c15b1 at <https://api.individual.githubcopilot.com/chat/completions> finished with 200 status after 1824.39300000004ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-12 14:13:13.852
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-12 14:13:14.573
+!MESSAGE [Info]	[fetchChat] Request 1d2dde08-c7dd-4a4d-89d9-352d3fc4723a at <https://api.individual.githubcopilot.com/chat/completions> finished with 200 status after 738.8460000000196ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-06-12 14:13:15.007
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [stop]

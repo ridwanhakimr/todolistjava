@@ -1,0 +1,191 @@
+package academytask;
+
+import javafx.application.Application;
+import javafx.beans.property.ReadOnlyStringWrapper;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
+import javafx.geometry.Insets;
+import javafx.scene.Scene;
+import javafx.scene.control.*;
+import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.layout.*;
+import javafx.stage.Stage;
+import javafx.util.Callback;
+
+public class MainApp extends Application {
+
+    private ObservableList<Tugas> daftarTugas = FXCollections.observableArrayList();
+    private Tugas tugasEdit = null;
+
+    @Override
+    public void start(Stage primaryStage) {
+        daftarTugas.setAll(TugasDAO.getAllTugas());
+
+        Label titleLabel = new Label("📋 AcademyTask");
+        titleLabel.setStyle("-fx-font-size: 24px; -fx-font-weight: bold;");
+
+        TextField titleField = new TextField();
+        titleField.setPromptText("Judul Tugas");
+
+        TextArea descArea = new TextArea();
+        descArea.setPromptText("Deskripsi Tugas");
+        descArea.setPrefRowCount(3);
+
+        DatePicker deadlinePicker = new DatePicker();
+        deadlinePicker.setPromptText("Deadline");
+
+        Button addButton = new Button("Tambah Tugas");
+
+        VBox formLayout = new VBox(10, titleField, descArea, deadlinePicker, addButton);
+        formLayout.setPadding(new Insets(10));
+        formLayout.setMaxWidth(300);
+
+        TableView<Tugas> taskTable = new TableView<>();
+        taskTable.setItems(daftarTugas);
+
+        TableColumn<Tugas, String> titleCol = new TableColumn<>("Judul");
+        titleCol.setCellValueFactory(new PropertyValueFactory<>("judul"));
+        titleCol.setMinWidth(200);
+
+        TableColumn<Tugas, String> deadlineCol = new TableColumn<>("Deadline");
+        deadlineCol.setCellValueFactory(new PropertyValueFactory<>("deadline"));
+        deadlineCol.setMinWidth(150);
+
+        TableColumn<Tugas, String> statusCol = new TableColumn<>("Status");
+        statusCol.setCellValueFactory(cellData -> {
+            return new ReadOnlyStringWrapper(cellData.getValue().getStatusString());
+        });
+        statusCol.setMinWidth(100);
+
+        // Edit column
+        TableColumn<Tugas, Void> editCol = new TableColumn<>("Edit");
+        editCol.setMinWidth(60);
+        editCol.setCellFactory(new Callback<TableColumn<Tugas, Void>, TableCell<Tugas, Void>>() {
+            @Override
+            public TableCell<Tugas, Void> call(final TableColumn<Tugas, Void> param) {
+                return new TableCell<Tugas, Void>() {
+                    private final Button btn = new Button("✏️");
+
+                    {
+                        btn.setOnAction(e -> {
+                            Tugas tugas = getTableView().getItems().get(getIndex());
+                            titleField.setText(tugas.getJudul());
+                            descArea.setText(tugas.getDeskripsi());
+                            deadlinePicker.setValue(tugas.getDeadline());
+                            tugasEdit = tugas;
+                        });
+                        btn.setStyle("-fx-background-color: transparent; -fx-cursor: hand;");
+                    }
+
+                    @Override
+                    public void updateItem(Void item, boolean empty) {
+                        super.updateItem(item, empty);
+                        if (empty) {
+                            setGraphic(null);
+                        } else {
+                            setGraphic(btn);
+                        }
+                    }
+                };
+            }
+        });
+
+        // Delete column
+        TableColumn<Tugas, Void> deleteCol = new TableColumn<>("Hapus");
+        deleteCol.setMinWidth(60);
+        deleteCol.setCellFactory(new Callback<TableColumn<Tugas, Void>, TableCell<Tugas, Void>>() {
+            @Override
+            public TableCell<Tugas, Void> call(final TableColumn<Tugas, Void> param) {
+                return new TableCell<Tugas, Void>() {
+                    private final Button btn = new Button("🗑️");
+
+                    {
+                        btn.setOnAction(e -> {
+                            Tugas tugas = getTableView().getItems().get(getIndex());
+                            Alert confirmAlert = new Alert(Alert.AlertType.CONFIRMATION);
+                            confirmAlert.setTitle("Konfirmasi Hapus");
+                            confirmAlert.setHeaderText(null);
+                            confirmAlert.setContentText("Apakah Anda yakin ingin menghapus tugas \"" + tugas.getJudul() + "\"?");
+                            confirmAlert.showAndWait().ifPresent(response -> {
+                                if (response == ButtonType.OK) {
+                                    TugasDAO.deleteTugas(tugas);
+                                    daftarTugas.setAll(TugasDAO.getAllTugas());
+                                }
+                            });
+                        });
+                        btn.setStyle("-fx-background-color: transparent; -fx-cursor: hand;");
+                    }
+
+                    @Override
+                    public void updateItem(Void item, boolean empty) {
+                        super.updateItem(item, empty);
+                        if (empty) {
+                            setGraphic(null);
+                        } else {
+                            setGraphic(btn);
+                        }
+                    }
+                };
+            }
+        });
+
+        taskTable.getColumns().addAll(titleCol, deadlineCol, statusCol, editCol, deleteCol);
+        taskTable.setPlaceholder(new Label("Belum ada tugas"));
+
+        addButton.setOnAction(e -> {
+            String judul = titleField.getText();
+            String deskripsi = descArea.getText();
+            if (deadlinePicker.getValue() == null) {
+                Alert alert = new Alert(Alert.AlertType.WARNING);
+                alert.setTitle("Peringatan");
+                alert.setHeaderText(null);
+                alert.setContentText("Deadline harus diisi!");
+                alert.showAndWait();
+                return;
+            }
+            if (judul == null || judul.trim().isEmpty()) {
+                Alert alert = new Alert(Alert.AlertType.WARNING);
+                alert.setTitle("Peringatan");
+                alert.setHeaderText(null);
+                alert.setContentText("Judul tugas tidak boleh kosong!");
+                alert.showAndWait();
+                return;
+            }
+
+            if (tugasEdit != null) {
+                Tugas tugasBaru = new Tugas(
+                    tugasEdit.getId(),
+                    judul,
+                    deskripsi,
+                    deadlinePicker.getValue()
+                );
+                tugasBaru.setStatus(tugasEdit.isStatus());
+                TugasDAO.updateTugas(tugasBaru);
+                tugasEdit = null;
+            } else {
+                Tugas tugasBaru = new Tugas(0, judul, deskripsi, deadlinePicker.getValue());
+                TugasDAO.addTugas(tugasBaru);
+            }
+
+            titleField.clear();
+            descArea.clear();
+            deadlinePicker.setValue(null);
+            daftarTugas.setAll(TugasDAO.getAllTugas());
+        });
+
+        VBox leftSection = new VBox(20, titleLabel, formLayout);
+        BorderPane root = new BorderPane();
+        root.setLeft(leftSection);
+        root.setCenter(taskTable);
+        root.setPadding(new Insets(20));
+
+        Scene scene = new Scene(root, 900, 500);
+        primaryStage.setTitle("AcademyTask");
+        primaryStage.setScene(scene);
+        primaryStage.show();
+    }
+
+    public static void main(String[] args) {
+        launch(args);
+    }
+}
