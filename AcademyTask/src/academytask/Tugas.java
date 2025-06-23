@@ -8,6 +8,7 @@ public class Tugas {
     private String deskripsi;
     private LocalDate deadline;
     private boolean status; // false = belum selesai, true = selesai
+    private String userId; // <-- Tambahkan ini
 
     public Tugas(int id, String judul, String deskripsi, LocalDate deadline) {
         this.id = id;
@@ -57,6 +58,16 @@ public class Tugas {
     public void setStatus(boolean status) {
         this.status = status;
     }
+
+    // Getter dan Setter untuk userId
+    public String getUserId() {
+        return userId;
+    }
+
+    public void setUserId(String userId) {
+        this.userId = userId;
+    }
+
 
     // Untuk menampilkan status dalam bentuk string di tabel
     public String getStatusString() {

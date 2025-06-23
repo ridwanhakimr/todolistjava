@@ -1,0 +1,539 @@
+package academytask;
+
+import javafx.application.Application;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
+import javafx.collections.transformation.FilteredList;
+import javafx.geometry.Insets;
+import javafx.geometry.Pos;
+import javafx.scene.Scene;
+import javafx.scene.control.*;
+import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.layout.*;
+import javafx.stage.Stage;
+import javafx.util.Callback;
+
+import java.time.LocalDate;
+
+public class MainApp extends Application {
+
+    private Stage primaryStage;
+    private static User currentUser; // Menyimpan info user yang sedang login
+
+    private ObservableList<Tugas> daftarTugas = FXCollections.observableArrayList();
+    private Tugas tugasEdit = null;
+
+    // Komponen UI yang perlu diakses secara global di kelas ini
+    private VBox leftSection;
+    private VBox formLayout;
+    private Label titleLabel;
+
+    public static void main(String[] args) {
+        launch(args);
+    }
+
+    @Override
+    public void start(Stage primaryStage) {
+        this.primaryStage = primaryStage;
+        primaryStage.setTitle("AcademyTask");
+
+        // Mulai aplikasi dengan menampilkan scene login
+        showLoginScene();
+
+        primaryStage.show();
+    }
+
+    private void showLoginScene() {
+        GridPane grid = new GridPane();
+        grid.setAlignment(Pos.CENTER);
+        grid.setHgap(10);
+        grid.setVgap(10);
+        grid.setPadding(new Insets(25, 25, 25, 25));
+
+        Label scenetitle = new Label("Selamat Datang di AcademyTask");
+        scenetitle.setStyle("-fx-font-size: 20px; -fx-font-weight: bold;");
+        grid.add(scenetitle, 0, 0, 2, 1);
+
+        Label userName = new Label("Username:");
+        grid.add(userName, 0, 1);
+        TextField userTextField = new TextField();
+        grid.add(userTextField, 1, 1);
+
+        Label pw = new Label("Password:");
+        grid.add(pw, 0, 2);
+        PasswordField pwBox = new PasswordField();
+        grid.add(pwBox, 1, 2);
+
+        Button btn = new Button("Login");
+        HBox hbBtn = new HBox(10, btn);
+        hbBtn.setAlignment(Pos.BOTTOM_RIGHT);
+        grid.add(hbBtn, 1, 4);
+
+        Hyperlink registerLink = new Hyperlink("Belum punya akun? Daftar di sini");
+        grid.add(registerLink, 1, 5);
+        registerLink.setOnAction(e -> showRegisterScene());
+
+        btn.setOnAction(e -> {
+            String username = userTextField.getText();
+            String password = pwBox.getText();
+            User user = UserDAO.checkLogin(username, password);
+
+            if (user != null) {
+                currentUser = user; // Set user yang login
+                showMainAppScene(); // Pindah ke scene utama
+            } else {
+                Alert alert = new Alert(Alert.AlertType.ERROR, "Username atau password salah!");
+                alert.showAndWait();
+            }
+        });
+
+        Scene scene = new Scene(grid, 400, 300);
+        primaryStage.setScene(scene);
+    }
+
+    private void showRegisterScene() {
+        GridPane grid = new GridPane();
+        grid.setAlignment(Pos.CENTER);
+        grid.setHgap(10);
+        grid.setVgap(10);
+        grid.setPadding(new Insets(25, 25, 25, 25));
+
+        Label scenetitle = new Label("Registrasi Akun Baru");
+        scenetitle.setStyle("-fx-font-size: 20px; -fx-font-weight: bold;");
+        grid.add(scenetitle, 0, 0, 2, 1);
+
+        grid.add(new Label("Nama Lengkap:"), 0, 1);
+        TextField nameField = new TextField();
+        grid.add(nameField, 1, 1);
+
+        grid.add(new Label("Username:"), 0, 2);
+        TextField userField = new TextField();
+        grid.add(userField, 1, 2);
+
+        grid.add(new Label("Email:"), 0, 3);
+        TextField emailField = new TextField();
+        grid.add(emailField, 1, 3);
+
+        grid.add(new Label("Password:"), 0, 4);
+        PasswordField passField = new PasswordField();
+        grid.add(passField, 1, 4);
+
+        Button registerBtn = new Button("Daftar");
+        Hyperlink loginLink = new Hyperlink("Sudah punya akun? Login");
+        HBox buttonBox = new HBox(10, registerBtn, loginLink);
+        grid.add(buttonBox, 1, 6);
+
+        loginLink.setOnAction(e -> showLoginScene());
+
+        registerBtn.setOnAction(e -> {
+            String name = nameField.getText();
+            String username = userField.getText();
+            String email = emailField.getText();
+            String password = passField.getText();
+
+            if (name.isEmpty() || username.isEmpty() || email.isEmpty() || password.isEmpty()) {
+                new Alert(Alert.AlertType.WARNING, "Semua field harus diisi!").showAndWait();
+                return;
+            }
+
+            User newUser = new User(name, username, password, email);
+            if (UserDAO.registerUser(newUser)) {
+                new Alert(Alert.AlertType.INFORMATION, "Registrasi berhasil! Silakan login.").showAndWait();
+                showLoginScene();
+            } else {
+                new Alert(Alert.AlertType.ERROR, "Registrasi gagal. Username atau email mungkin sudah digunakan.").showAndWait();
+            }
+        });
+
+        Scene scene = new Scene(grid, 450, 400);
+        primaryStage.setScene(scene);
+    }
+
+    private void showMainAppScene() {
+        // Logika dari method start() lama dipindahkan ke sini
+    	daftarTugas.setAll(TugasDAO.getTugasByUser(currentUser.getId()));
+
+        // --- FORM SECTION ---
+        titleLabel = new Label("📋 AcademyTask");
+        titleLabel.setStyle("-fx-font-size: 24px; -fx-font-weight: bold;");
+
+        TextField titleField = new TextField();
+        titleField.setPromptText("Judul Tugas");
+
+        TextArea descArea = new TextArea();
+        descArea.setPromptText("Deskripsi Tugas");
+        descArea.setPrefRowCount(3);
+
+        DatePicker deadlinePicker = new DatePicker();
+        deadlinePicker.setPromptText("Deadline");
+
+        Button addButton = new Button("Tambah Tugas");
+        Button editTaskButton = new Button("Edit Tugas");
+        Button cancelButton = new Button("Kembali");
+        editTaskButton.setVisible(false);
+        cancelButton.setVisible(false);
+
+        HBox editMenu = new HBox(10, editTaskButton, cancelButton);
+        formLayout = new VBox(10, titleField, descArea, deadlinePicker, addButton, editMenu);
+        formLayout.setPadding(new Insets(10));
+        formLayout.setMaxWidth(300);
+
+        // --- USER PROFILE & LOGOUT SECTION ---
+        Label welcomeLabel = new Label("Halo, " + currentUser.getName() + "!");
+        welcomeLabel.setStyle("-fx-font-weight: bold;");
+        Button profileButton = new Button("Profil");
+        Button logoutButton = new Button("Logout");
+        HBox userMenu = new HBox(10, profileButton, logoutButton);
+
+        VBox profileSection = new VBox(10, welcomeLabel, userMenu);
+        profileSection.setPadding(new Insets(0, 0, 20, 0));
+
+        logoutButton.setOnAction(e -> {
+            currentUser = null;
+            showLoginScene();
+        });
+
+        leftSection = new VBox(20, titleLabel, profileSection, formLayout);
+        leftSection.setPadding(new Insets(0, 40, 0, 0));
+
+        profileButton.setOnAction(e -> {
+            VBox profileView = createProfileView(() -> {
+                leftSection.getChildren().set(2, formLayout); // Kembali ke form
+            });
+            leftSection.getChildren().set(2, profileView);
+        });
+
+
+        // --- TABLE SECTION ---
+        ComboBox<String> statusFilter = new ComboBox<>();
+        statusFilter.getItems().addAll("Semua", "Selesai", "Belum Selesai");
+        statusFilter.setValue("Semua");
+
+        TextField searchField = new TextField();
+        searchField.setPromptText("Cari judul...");
+
+        HBox filterBox = new HBox(10, new Label("Filter:"), statusFilter, searchField);
+        filterBox.setPadding(new Insets(0, 0, 10, 0));
+
+        FilteredList<Tugas> filteredData = new FilteredList<>(daftarTugas, p -> true);
+        TableView<Tugas> taskTable = new TableView<>(filteredData);
+
+        // Definisi Kolom Tabel (Sama seperti kode Anda sebelumnya)
+        TableColumn<Tugas, String> titleCol = new TableColumn<>("Judul");
+        titleCol.setCellValueFactory(new PropertyValueFactory<>("judul"));
+        titleCol.setMinWidth(200);
+
+        TableColumn<Tugas, String> deadlineCol = new TableColumn<>("Deadline");
+        deadlineCol.setCellValueFactory(new PropertyValueFactory<>("deadline"));
+        deadlineCol.setMinWidth(150);
+        
+        // ... (Kode untuk statusCol, editCol, deleteCol, dan taskTable.setRowFactory SAMA PERSIS seperti di file asli Anda) ...
+        // START: Paste kode kolom yang tidak berubah di sini
+        TableColumn<Tugas, Void> statusCol = new TableColumn<>("Status");
+        statusCol.setMinWidth(150);
+        statusCol.setCellFactory(new Callback<TableColumn<Tugas, Void>, TableCell<Tugas, Void>>() {
+            @Override
+            public TableCell<Tugas, Void> call(final TableColumn<Tugas, Void> param) {
+                return new TableCell<Tugas, Void>() {
+                    private final Button belumSelesaiBtn = new Button("❌ Belum Selesai");
+                    private final Label selesaiLabel = new Label("✅ Selesai");
+
+                    {
+                        belumSelesaiBtn.setStyle("-fx-background-color: transparent; -fx-text-fill: #d9534f; -fx-font-weight: bold; -fx-cursor: hand;");
+                        selesaiLabel.setStyle("-fx-text-fill: green; -fx-font-weight: bold;");
+
+                        belumSelesaiBtn.setOnAction(e -> {
+                            Tugas tugas = getTableView().getItems().get(getIndex());
+                            Alert confirmAlert = new Alert(Alert.AlertType.CONFIRMATION);
+                            confirmAlert.setTitle("Konfirmasi Selesai");
+                            confirmAlert.setHeaderText(null);
+                            confirmAlert.setContentText("Apakah tugas sudah selesai?");
+                            confirmAlert.showAndWait().ifPresent(response -> {
+                                if (response == ButtonType.OK) {
+                                    tugas.setStatus(true);
+                                    TugasDAO.updateTugas(tugas);
+                                    daftarTugas.setAll(TugasDAO.getTugasByUser(currentUser.getId()));
+                                }
+                            });
+                        });
+                    }
+
+                    @Override
+                    public void updateItem(Void item, boolean empty) {
+                        super.updateItem(item, empty);
+                        if (empty) {
+                            setGraphic(null);
+                        } else {
+                            Tugas tugas = getTableView().getItems().get(getIndex());
+                            if (!tugas.isStatus()) {
+                                setGraphic(belumSelesaiBtn);
+                            } else {
+                                setGraphic(selesaiLabel);
+                            }
+                        }
+                    }
+                };
+            }
+        });
+        statusCol.setMinWidth(100);
+
+        // Edit column
+        TableColumn<Tugas, Void> editCol = new TableColumn<>("Edit");
+        editCol.setMinWidth(60);
+        editCol.setCellFactory(new Callback<TableColumn<Tugas, Void>, TableCell<Tugas, Void>>() {
+            @Override
+            public TableCell<Tugas, Void> call(final TableColumn<Tugas, Void> param) {
+                return new TableCell<Tugas, Void>() {
+                    private final Button btn = new Button("✏️");
+
+                    {
+                        btn.setOnAction(e -> {
+                            Tugas tugas = getTableView().getItems().get(getIndex());
+                            titleField.setText(tugas.getJudul());
+                            descArea.setText(tugas.getDeskripsi());
+                            deadlinePicker.setValue(tugas.getDeadline());
+                            tugasEdit = tugas;
+                            // Switch to edit mode
+                            addButton.setVisible(false);
+                            editTaskButton.setVisible(true);
+                            cancelButton.setVisible(true);
+                        });
+                        btn.setStyle("-fx-background-color: transparent; -fx-cursor: hand;");
+                    }
+
+                    @Override
+                    public void updateItem(Void item, boolean empty) {
+                        super.updateItem(item, empty);
+                        if (empty) {
+                            setGraphic(null);
+                        } else {
+                            setGraphic(btn);
+                        }
+                    }
+                };
+            }
+        });
+
+        // Delete column
+        TableColumn<Tugas, Void> deleteCol = new TableColumn<>("Hapus");
+        deleteCol.setMinWidth(60);
+        deleteCol.setCellFactory(new Callback<TableColumn<Tugas, Void>, TableCell<Tugas, Void>>() {
+            @Override
+            public TableCell<Tugas, Void> call(final TableColumn<Tugas, Void> param) {
+                return new TableCell<Tugas, Void>() {
+                    private final Button btn = new Button("🗑️");
+
+                    {
+                        btn.setOnAction(e -> {
+                            Tugas tugas = getTableView().getItems().get(getIndex());
+                            Alert confirmAlert = new Alert(Alert.AlertType.CONFIRMATION);
+                            confirmAlert.setTitle("Konfirmasi Hapus");
+                            confirmAlert.setHeaderText(null);
+                            confirmAlert.setContentText("Apakah Anda yakin ingin menghapus tugas \"" + tugas.getJudul() + "\"?");
+                            confirmAlert.showAndWait().ifPresent(response -> {
+                                if (response == ButtonType.OK) {
+                                    TugasDAO.deleteTugas(tugas);
+                                    daftarTugas.setAll(TugasDAO.getTugasByUser(currentUser.getId()));
+                                }
+                            });
+                        });
+                        btn.setStyle("-fx-background-color: transparent; -fx-cursor: hand;");
+                    }
+
+                    @Override
+                    public void updateItem(Void item, boolean empty) {
+                        super.updateItem(item, empty);
+                        if (empty) {
+                            setGraphic(null);
+                        } else {
+                            setGraphic(btn);
+                        }
+                    }
+                };
+            }
+        });
+        
+        taskTable.getColumns().addAll(titleCol, deadlineCol, statusCol, editCol, deleteCol);
+        taskTable.setPlaceholder(new Label("Belum ada tugas"));
+
+        taskTable.setRowFactory(tv -> {
+            TableRow<Tugas> row = new TableRow<>() {
+                @Override
+                protected void updateItem(Tugas tugas, boolean empty) {
+                    super.updateItem(tugas, empty);
+                    if (tugas == null || empty) {
+                        setStyle("");
+                    } else if (tugas.isStatus()) {
+                        setStyle("-fx-background-color: #d4edda; -fx-font-weight: bold;");
+                    } else if (tugas.getDeadline().isBefore(LocalDate.now()) && !tugas.isStatus()) {
+                        setStyle("-fx-background-color: #ffcccc; -fx-font-weight: bold;");
+                    } else {
+                        setStyle("");
+                    }
+                }
+            };
+            row.setOnMouseClicked(event -> {
+                if (event.getClickCount() == 2 && !row.isEmpty()) {
+                    Tugas tugas = row.getItem();
+                    VBox detailView = createDetailView(tugas, () -> {
+                        leftSection.getChildren().set(2, formLayout);
+                    });
+                    leftSection.getChildren().set(2, detailView);
+                }
+            });
+            return row;
+        });
+        // END: Akhir dari kode kolom yang tidak berubah
+        
+
+        // --- ACTION HANDLERS ---
+        // ... (Kode untuk addButton, editTaskButton, cancelButton, filter, dan search SAMA PERSIS seperti di file asli Anda) ...
+        // START: Paste kode action handler yang tidak berubah di sini
+        addButton.setOnAction(e -> {
+            String judul = titleField.getText();
+            String deskripsi = descArea.getText();
+            if (deadlinePicker.getValue() == null) {
+                Alert alert = new Alert(Alert.AlertType.WARNING);
+                alert.setTitle("Peringatan");
+                alert.setHeaderText(null);
+                alert.setContentText("Deadline harus diisi!");
+                alert.showAndWait();
+                return;
+            }
+            if (judul == null || judul.trim().isEmpty()) {
+                Alert alert = new Alert(Alert.AlertType.WARNING);
+                alert.setTitle("Peringatan");
+                alert.setHeaderText(null);
+                alert.setContentText("Judul tugas tidak boleh kosong!");
+                alert.showAndWait();
+                return;
+            }
+
+            Tugas tugasBaru = new Tugas(0, judul, deskripsi, deadlinePicker.getValue());
+            // PERUBAHAN 2: Set ID pengguna saat ini pada tugas baru
+            tugasBaru.setUserId(currentUser.getId()); 
+            
+            TugasDAO.addTugas(tugasBaru);
+
+            titleField.clear();
+            descArea.clear();
+            deadlinePicker.setValue(null);
+            
+            // Muat ulang data TUGAS PENGGUNA SAAT INI
+            daftarTugas.setAll(TugasDAO.getTugasByUser(currentUser.getId()));
+        });
+
+        editTaskButton.setOnAction(e -> {
+            String judul = titleField.getText();
+            String deskripsi = descArea.getText();
+            if (deadlinePicker.getValue() == null) {
+                Alert alert = new Alert(Alert.AlertType.WARNING);
+                alert.setTitle("Peringatan");
+                alert.setHeaderText(null);
+                alert.setContentText("Deadline harus diisi!");
+                alert.showAndWait();
+                return;
+            }
+            if (judul == null || judul.trim().isEmpty()) {
+                Alert alert = new Alert(Alert.AlertType.WARNING);
+                alert.setTitle("Peringatan");
+                alert.setHeaderText(null);
+                alert.setContentText("Judul tugas tidak boleh kosong!");
+                alert.showAndWait();
+                return;
+            }
+
+            if (tugasEdit != null) {
+                Tugas tugasBaru = new Tugas(
+                    tugasEdit.getId(),
+                    judul,
+                    deskripsi,
+                    deadlinePicker.getValue()
+                );
+                tugasBaru.setStatus(tugasEdit.isStatus());
+                TugasDAO.updateTugas(tugasBaru);
+            }
+
+            // Reset form and switch back to add mode
+            tugasEdit = null;
+            titleField.clear();
+            descArea.clear();
+            deadlinePicker.setValue(null);
+            addButton.setVisible(true);
+            editTaskButton.setVisible(false);
+            cancelButton.setVisible(false);
+            daftarTugas.setAll(TugasDAO.getTugasByUser(currentUser.getId()));
+        });
+
+        cancelButton.setOnAction(e -> {
+            // Reset form and switch back to add mode
+            tugasEdit = null;
+            titleField.clear();
+            descArea.clear();
+            deadlinePicker.setValue(null);
+            addButton.setVisible(true);
+            editTaskButton.setVisible(false);
+            cancelButton.setVisible(false);
+        });
+
+        statusFilter.setOnAction(e -> updateFilter(filteredData, statusFilter, searchField));
+        searchField.textProperty().addListener((obs, oldVal, newVal) -> updateFilter(filteredData, statusFilter, searchField));
+        // END: Akhir dari action handler
+        
+        // --- LAYOUT ---
+        VBox tableSection = new VBox(filterBox, taskTable);
+        BorderPane root = new BorderPane();
+        root.setLeft(leftSection);
+        root.setCenter(tableSection);
+        root.setPadding(new Insets(20));
+
+        Scene scene = new Scene(root, 900, 500);
+        primaryStage.setScene(scene);
+    }
+    
+    private VBox createProfileView(Runnable onBack) {
+        Label title = new Label("Profil Pengguna");
+        title.setStyle("-fx-font-size: 18px; -fx-font-weight: bold;");
+
+        Label nameLabel = new Label("Nama: " + currentUser.getName());
+        Label usernameLabel = new Label("Username: " + currentUser.getUsername());
+        Label emailLabel = new Label("Email: " + currentUser.getEmail());
+
+        Button backBtn = new Button("Kembali");
+        backBtn.setOnAction(e -> onBack.run());
+
+        VBox profileBox = new VBox(15, title, nameLabel, usernameLabel, emailLabel, idLabel, backBtn);
+        profileBox.setPadding(new Insets(20));
+        return profileBox;
+    }
+    
+    // ... (createDetailView dan updateFilter SAMA PERSIS seperti di file asli Anda) ...
+    // START: Paste kode method yang tidak berubah di sini
+    private VBox createDetailView(Tugas tugas, Runnable onBack) {
+        Label judulLabel = new Label("Judul: " + tugas.getJudul());
+        judulLabel.setStyle("-fx-font-size: 18px; -fx-font-weight: bold;");
+        Label descLabel = new Label("Deskripsi: " + tugas.getDeskripsi());
+        descLabel.setWrapText(true);
+        Label deadlineLabel = new Label("Deadline: " + tugas.getDeadline().toString());
+        Label statusLabel = new Label("Status: " + (tugas.isStatus() ? "Selesai" : "Belum Selesai"));
+        Button backBtn = new Button("Kembali");
+        backBtn.setOnAction(e -> onBack.run());
+        VBox detailBox = new VBox(15, judulLabel, descLabel, deadlineLabel, statusLabel, backBtn);
+        detailBox.setPadding(new Insets(20));
+        return detailBox;
+    }
+    
+    private void updateFilter(FilteredList<Tugas> filteredData, ComboBox<String> statusFilter, TextField searchField) {
+        String status = statusFilter.getValue();
+        String keyword = searchField.getText().toLowerCase();
+
+        filteredData.setPredicate(tugas -> {
+            boolean statusMatch = status.equals("Semua") ||
+                (status.equals("Selesai") && tugas.isStatus()) ||
+                (status.equals("Belum Selesai") && !tugas.isStatus());
+            boolean keywordMatch = tugas.getJudul().toLowerCase().contains(keyword);
+            return statusMatch && keywordMatch;
+        });
+    }
+    // END: Akhir dari method yang tidak berubah
+}
